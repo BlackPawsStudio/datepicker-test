@@ -31,7 +31,7 @@ export const Sundays = () => {
       }
     }
     // return sundayCount;
-    return sundayCount
+    return `${sundayCount} sundays than have date lower that 28 in this time limit`;
   };
 
   const output =
@@ -56,7 +56,7 @@ export const Sundays = () => {
           setEndDate(secondDate);
         }}
       />
-      <div className="flex flex-col gap-2 mt-4">{output} sundays than have date lower that 28 in this time limit</div>
+      <div className="flex flex-col gap-2 mt-4">{output}</div>
     </div>
   );
 };
