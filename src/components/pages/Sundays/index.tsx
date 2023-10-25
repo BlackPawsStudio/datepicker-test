@@ -19,7 +19,6 @@ export const Sundays = () => {
 
   const countSundays = () => {
     let newStartDate = new Date(startDate);
-    let day = newStartDate.getDate();
     while (newStartDate.getDay() < 6) {
       newStartDate.setDate(newStartDate.getDate() + 1);
     }
